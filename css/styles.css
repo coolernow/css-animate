@@ -11,3 +11,72 @@ h3{
   text-align: center;
 }
 
+#rotate{
+	 background-color: Red; 
+}
+#rotate:hover{
+	border: 2px solid #000;
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 10px;
+	animation-name: rotating;
+	animation-duration: 4s;
+}
+
+@keyframes rotating{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+#skew{
+	background-color: orange; 
+}
+
+#skew:hover{
+	border: 2px solid #000;
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 10px;
+	animation-name: Skewing;
+	animation-duration: 4s; 
+}
+
+@keyframes Skewing{
+	from{
+		transform: skewX(0deg);
+		}
+	to{
+		transform: skewX(180deg);
+	}
+
+}
+
+#all{
+	background-color: yellow;
+}
+
+#all:hover{
+	border: 2px solid #000;
+	width: 200px;
+	height: 200px; 
+	display: block; 
+	margin: 10px;
+	animation-name: allstar;
+	animation-duration: 4s; 
+}
+
+@keyframes allstar{
+	from{
+		transform: skewX(0deg) rotateY(0deg); 
+		background-color: green;
+	}
+	to{
+		transform: skewX(180deg) rotateY(180deg);
+		background-color: blue;
+	}
+}
